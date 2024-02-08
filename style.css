@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  min-height: 100svh;
+  background: #f85032; /* fallback for old browsers */
+  background: #cb2d3e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  padding: 1rem;
+}
+
+.container .appContainer {
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  gap: 1rem;
+  background-color: hsla(0, 0%, 10%, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.container .appContainer h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.appContainer .row input {
+  border: none;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #f85032;
+  color: white;
+}
+
+.appContainer .row button {
+  width: 20%;
+  border: none;
+  background-color: white;
+  color: #191919;
+  padding: 0.75em 1em;
+  font-size: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.listContainer li {
+  list-style: none;
+  font-size: 1.05rem;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listStyle{
+    background-color: white;
+    color: black;
+}
+
+.done{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+
+
+
+
+.listContainer button {
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all ease-in-out 0.15s;
+}
+
+
+
+.redBtn {
+  background-color: rgb(165, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.redBtn:hover {
+  background-color: rgb(124, 0, 0);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .row {
+      flex-direction: column; /* Switch back to row for larger screens */
+    }
+  
+    .appContainer .row input {
+      width: 100%;
+    }
+  
+    .appContainer .row button {
+      width: 100%;
+    }
+    .listContainer li{
+        gap: 0.5rem;
+        flex-direction: column;
+        font-size: 0.85rem;
+    }
+
+    .listContainer button{
+        font-size: 0.85rem;
+        padding: 0.5em 1.5em;
+        width: 100%;
+    }
+  }
+  
+
+  
+  
